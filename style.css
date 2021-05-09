@@ -6,12 +6,16 @@
 }
 
 body{
-  background: #fff;
+  background: rgba(248, 229, 229, 0.5);
 }
 
 a{
   text-decoration: none;
   color: black;
+}
+
+button{
+  cursor: pointer;
 }
 
 .header{
@@ -46,11 +50,11 @@ a{
 }
 
 .navbar ul a:hover{
-  border-bottom: 2px solid #f5e0ec;
+  border-bottom: 2px solid rgba(195, 158, 160, 0.6);
 }
 
 .navbar a.current{
-  border-bottom: 2px solid #f5e0ec;
+  border-bottom: 2px solid rgba(195, 158, 160, 0.6);
 }
 
 .hero{
@@ -81,17 +85,11 @@ a{
   width: 200px;
   border-radius: 5px;
   border: none;
-  opacity: 0.8;
+  background: #fff;
   font-weight: bold;
   font-size: 1.2rem;
   color: grey;
 }
-
-.hero-content button:hover{
-  opacity: 1;
-  cursor: pointer;
-}
-
 
 .description {
   text-align: center;
@@ -121,7 +119,7 @@ a{
 #section-1,
 #section-2,
 #section-3{
-  background-color: rgba(201,201,201, 0.3);
+  background-color: rgba(195, 158, 160, 0.6);
   width: 25%;
   margin-bottom: 60px;
   border-radius: 6px;
@@ -142,18 +140,7 @@ footer{
   position: relative;
   width: 100%;
   bottom: 0;
-  height: 180px;
-}
-
-footer::before{
-  content: "";
-  position: absolute;
-  opacity: 0.5;
-  background: url("../images/set.jpg") no-repeat center center/cover;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+  background:rgba(248, 229, 229, 0.8);
 }
 
 .footer-content{
@@ -163,30 +150,56 @@ footer::before{
   justify-content: space-around;
   font-size: 1.3rem;
   height: 100%;
-  padding-top: 2rem;
-  color: grey;
+  padding: 2rem 0 3rem 0;
+  color: #c9c9c9;
 }
 
 .footer-content .email,
-.footer-content .socials,
-.footer-content .call{
+.footer-content .offers,
+.footer-content .socials{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content .email{
   text-align: center;
 }
 
+.footer-content .offers input,
+.footer-content .offers button{
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+  margin: 0.25rem;
+  background: #fff;
+}
+
+.btn:hover,
+.footer-content .offers .btn:hover{
+  opacity: 1;
+  cursor: pointer;
+  background: rgba(195, 158, 160, 0.8);
+  color: #fff;
+}
+
+
+.footer-content .offers input:focus{
+  outline: none;
+}
+
 .footer-content h4{
-  padding-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-weight: lighter;
   font-size: 1.5rem;
-  letter-spacing: 1px;
+  border-bottom: 1px dotted #c9c9c9;
+  text-align: center;
 }
 
 .socials i {
   padding: 5px;
   font-size: 1.5rem;
-  border: 2px solid #f4f4f4;
-  border-radius: 10px;
   transition: ease 0.5s;
-  color: black;
+  color: #c9c9c9;
 }
 
 .socials i:hover{
@@ -194,8 +207,9 @@ footer::before{
   transform: scale(1.3);
 }
 
-.footer-content .email a{
-  color: grey;
+.footer-content a{
+  color: #c9c9c9;
+  padding: 0.25rem;
 }
 
 .footer-content .email a:hover{
@@ -205,7 +219,7 @@ footer::before{
 
 footer .copyright{
   position: absolute;
-  bottom: 1rem;
+  bottom: 0.5rem;
   text-align: center;
   width: 100%;
 }
@@ -243,9 +257,25 @@ footer .copyright{
   .footer-content{
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 0;
+    font-size: 1.2rem;
   }
+
+  .footer-content .socials{
+    flex-direction: row;
+
+  }
+
+  .footer-content .socials span{
+    display: none;
+  }
+
+  .footer-content .offers{
+    width: 80%;
+  }
+
+    .footer-content .offers h4{
+      display: block;
+    }
 
   .footer-content div{
     padding-bottom: 0.5rem;
