@@ -115,25 +115,32 @@ button{
   padding-bottom: 15px;
 }
 
-
 #section-1,
 #section-2,
 #section-3{
-  background-color: rgba(195, 158, 160, 0.6);
   width: 25%;
   margin-bottom: 60px;
   border-radius: 6px;
-  color: #fff;
   padding: 1rem;
+  position: relative;
 }
 
-#section-1 h3:hover,
-#section-2 h3:hover,
-#section-3 h3:hover{
-  color: #fff;
-  cursor: pointer;
-  transition: ease 0.5s;
+#section-1::before{
+  content:"";
+  background: url("../images/manicure.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0.9;
+
 }
+
+#section-1 p{
+  color: #fff;
+}
+
 
 /*Footer Styling*/
 footer{
