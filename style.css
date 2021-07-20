@@ -14,7 +14,7 @@ a{
   color: black;
 }
 
-button{
+.btn{
   cursor: pointer;
 }
 
@@ -80,9 +80,8 @@ button{
   padding-bottom: 1rem;
 }
 
-.hero-content button{
-  padding: 0.75rem;
-  width: 200px;
+.hero-content .btn{
+  padding: 0.5rem 1rem 0.5rem;
   border-radius: 5px;
   border: none;
   background: #fff;
@@ -137,9 +136,6 @@ button{
 
 }
 
-#section-1 p{
-  color: #fff;
-}
 
 
 /*Footer Styling*/
