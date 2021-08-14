@@ -20,10 +20,11 @@ a{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 1rem;
 }
 
 .header img{
-  width: 200px;
+  width: 300px;
   margin-left: 3rem;
 }
 
@@ -81,18 +82,18 @@ a{
   display: none;
   border: none;
   background: #fff;
-  color: #000;
+  color: #b1b0ae;;
   font-weight: bold;
   padding: 0.5rem;
   border-radius: 5px;
   font-size: 1em;
 }
 
-.grid-content img:hover,
 .grid-content img:hover + .price_btn{
   opacity: 0.9;
   cursor: pointer;
   display: block;
+
 }
 
 .price_btn:hover{
@@ -103,6 +104,8 @@ a{
 h3{
   text-align: center;
   padding-bottom: 0.5rem;
+  color: #b1b0ae;
+  font-size: 1.25rem;
 }
 
 /*Footer Styling*/
