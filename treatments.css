@@ -99,6 +99,8 @@ a{
 .price_btn:hover{
   display: block;
   cursor: pointer;
+  background: #e9d1df;
+  color: #fff;
 }
 
 h3{
