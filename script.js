@@ -33,13 +33,17 @@ function showSlide(){
 }
 
 //SETUP EVENT LISTENERS FOR BUTTONS
-nxtBtn.addEventListener("click", function(){
+nxtBtn.addEventListener("click", nxtSlide)
+
+
+
+function nxtSlide(){
   currentSlide++;
   if(currentSlide > 2){
     currentSlide = 0;
   }
   showSlide();
-})
+};
 
 prevBtn.addEventListener("click", function(){
   currentSlide--;
@@ -48,3 +52,7 @@ prevBtn.addEventListener("click", function(){
   };
   showSlide();
 })
+
+
+
+setInterval(nxtSlide, 4000);
