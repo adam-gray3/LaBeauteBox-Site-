@@ -175,6 +175,7 @@ a{
 
 .name{
   padding-bottom: 1rem;
+  color: white;
 }
 
 .slide-nav{
@@ -187,16 +188,16 @@ a{
   cursor: pointer;
 }
 
-.slide-nav:hover{
+.slide-nav:active{
   color: rgba(229,192,200);
 }
 
 .next-btn{
-  right: 40px;
+  right: 2%;
 }
 
 .prev-btn{
-  left: 40px;
+  left: 2%;;
 }
 
 .testimonal{
@@ -250,7 +251,6 @@ footer{
   background: #e9d1df;
   color: #fff;
 }
-
 
 .footer-content .offers input:focus{
   outline: none;
@@ -421,8 +421,20 @@ footer .copyright{
     display: none;
   }
 
+  .image-test img{
+    width: 90%;
+  }
+
   .slideshow{
     width: 100%;
+  }
+
+  .slide-content{
+    padding: 1.5rem;
+  }
+
+  .slideshow-container{
+    margin-top: 1.5rem;
   }
 
   .slide-nav{
