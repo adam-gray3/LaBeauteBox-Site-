@@ -7,7 +7,7 @@ const items = [{
 {
   id: 2,
   name: "One of our lovely clients!",
-  text: "I've always loved Emma doing my nails as she is really gentle compared to other places i've been to. She also uses really good products that last a long time and has an abundnace of colours to choose from. Emma is also really easy to get along with, I wouldnt use anybody else."
+  text: "I've always loved Emma doing my nails as she is really gentle compared to other places i've been. She also uses really good products that last a long time and has an abundnace of colours to choose. Emma is really easy to get along with, I wouldnt use anybody else."
 },
 {
   id: 3,
