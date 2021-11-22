@@ -27,15 +27,14 @@ const prevBtn = document.querySelector(".prev-btn");
 
 //SETUP FUNCTION TO SHOW SLIDE
 function showSlide(){
-  const slides = items[currentSlide];
+  /*const slides = items[currentSlide];*/
   name.textContent = items[currentSlide].name;
   testimonal.textContent = items[currentSlide].text;
 }
 
 //SETUP EVENT LISTENERS FOR BUTTONS
 nxtBtn.addEventListener("click", nxtSlide)
-
-
+prevBtn.addEventListener("click", prevSlide)
 
 function nxtSlide(){
   currentSlide++;
@@ -45,14 +44,12 @@ function nxtSlide(){
   showSlide();
 };
 
-prevBtn.addEventListener("click", function(){
+function prevSlide(){
   currentSlide--;
   if(currentSlide < 0){
     currentSlide = items.length -1
   };
   showSlide();
-})
+};
 
-
-
-setInterval(nxtSlide, 4000);
+setInterval(nxtSlide, 9000);
