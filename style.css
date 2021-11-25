@@ -167,20 +167,20 @@ a{
 }
 
 .slide-content{
-  padding: 4rem;
+  padding: 3rem;
   position: relative;
   background: #c9c9c9;
   border-radius: 8px;
 }
 
 .name{
-  padding-bottom: 1rem;
+  padding-top: 0.5rem;
   color: white;
 }
 
 .slide-nav{
   position: absolute;
-  top: 50%;
+  top: 45%;
   font-size: 2.5rem;
   background: none;
   border: none;
@@ -201,7 +201,13 @@ a{
 }
 
 .testimonal{
-  padding: 1rem;
+  margin: 1rem;
+  padding: 0 1rem;
+}
+
+.icon{
+  width: 40px;
+
 }
 
 /*Footer Styling*/
@@ -303,6 +309,7 @@ footer .copyright{
   align-items: center;
   justify-content: space-around;
   color: #c9c9c9;
+  overflow: hidden;
 }
 
 .form{
@@ -413,9 +420,6 @@ footer .copyright{
     padding: 1rem;
   }
 
-  .testimonal-content{
-    width: 100%;
-  }
 
   .description{
     display: none;

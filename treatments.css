@@ -204,18 +204,22 @@ footer .copyright{
 .price-list{
   text-align: center;
   padding: 3rem;
-
 }
 
 .price-list h2{
-  padding: 0 2rem 2rem;;
+  padding: 0 2rem 2rem;
   font-size: 2rem;
   text-decoration: underline;
 }
 
+.price-list h3{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
 .price-list h5{
-  font-size: 1.5rem;
-  padding: 1rem;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
 }
 
 .price-list p{
@@ -223,31 +227,33 @@ footer .copyright{
 }
 
 .price-cont{
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+
 }
 
 .price-card{
-  width: 25%;
-  background-color: rgba(248, 229, 229, 0.8);
-  margin: 0.5rem;
-  border-radius: 3px;
+  border: 8px solid silver;
+  border-radius: 12px;
   padding: 2rem;
 }
 
 .btn{
+  display: inline-block;
+  margin-top:  1rem;
   padding: 0.5rem;
   border-radius: 5px;
   border: none;
-  background: #fff;
+  background: rgba(195, 158, 160, 0.8);
   font-weight: bold;
   font-size: 1.2rem;
   color: grey;
 }
 
 .btn:hover{
-  opacity: 1;
+  opacity: 0.8;
   cursor: pointer;
-  background: rgba(195, 158, 160, 0.8);
   color: #fff;
 }
 
@@ -299,6 +305,24 @@ footer .copyright{
   .grid-container{
     grid-template-columns: 1fr;
   }
+
+
+    .price-cont{
+      grid-template-columns: 1fr;
+    }
+
+    .price-card{
+      width: 100%;
+    }
+
+    .price-list p{
+      padding: 0.5rem;
+    }
+
+    .price-list{
+      padding: 1rem;
+    }
+
   .footer-content{
     flex-direction: column;
     align-items: center;
@@ -335,15 +359,4 @@ footer .copyright{
     display: none;
   }
 
-  .price-cont{
-    flex-direction: column;
-  }
-
-  .price-card{
-    width: 100%;
-  }
-
-  .price_btn{
-    left: 30%;
-  }
 }
