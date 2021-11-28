@@ -1,6 +1,7 @@
 :root{
-  --grey-text: #c9c9c9;
+  --grey-text: #696868;
   --pink-text: rgba(248, 229, 229);
+  --grey-btn: #c9c9c9;
 }
 
 
@@ -23,13 +24,15 @@
 }
 
 .grey-btn{
+  display: inline-block;
   padding: 0.5rem 1rem 0.5rem;
   border-radius: 5px;
   border: none;
-  background: var(--grey-text);
+  background: var(--grey-btn);
   font-family: 'Cardo', serif;
   font-size: 1.4rem;
   color: #fff;
+  margin-top: 0.5rem;
 }
 
 .grey-btn:hover{
@@ -50,7 +53,6 @@ body{
 
 a{
   text-decoration: none;
-  color: black;
 }
 
 .btn{
@@ -87,7 +89,7 @@ a{
   padding: 10px;
   font-size: 1.3rem;
   font-family: 'Cardo', serif;
-  color: #c9c9c9;
+  color: var(--grey-text);
 }
 
 .navbar ul a:hover,
@@ -125,7 +127,7 @@ a{
   text-align: center;
   padding: 5rem 6rem 4rem;
   line-height: 1.5rem;
-  color: #c9c9c9;
+  color: var(--grey-text);
 }
 
 .description h1{
@@ -133,7 +135,7 @@ a{
   font-weight: 600;
   font-size: 4rem;
   padding-bottom: 3rem;
-  color: rgba(229,192,200,0.6);
+  color: var(--pink-text);
 }
 
 .previews{
@@ -154,11 +156,25 @@ a{
 
 .previews-content{
   width: 25%;
-  background:rgba(229,192,200,0.6);
   border-radius: 6px;
   padding: 1rem;
    color: #fff;
    margin-bottom: 5rem;
+}
+
+.hands{
+  background: url("../images/manicure.jpg") no-repeat center center/cover;
+}
+
+
+.feet{
+  background: url("../images/pedicure.jpg") no-repeat center center/cover;
+  opacity: 0.6;
+}
+
+.face{
+  background: url("../images/makeup.jpg") no-repeat center center/cover;
+  opacity: 0.6;
 }
 
 .image-test{
@@ -178,14 +194,15 @@ a{
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
+  margin-bottom: 4rem;
 }
 
 .title{
   margin-bottom: 3rem;
-  color: rgba(229,192,200);
+  color: var(--pink-text);
   font-size: 3rem;
   font-family: 'Clicker Script', cursive;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .slideshow{
@@ -205,6 +222,7 @@ a{
   color: #fff;
   border-radius: 8px;
   font-family: 'Cardo', serif;
+  font-size: 1.2rem;
 }
 
 .slide-nav{
@@ -240,11 +258,10 @@ a{
 
 /*Footer Styling*/
 footer{
-  margin-top: 3rem;
   position: relative;
   width: 100%;
   bottom: 0;
-  background:rgba(248, 229, 229, 0.8);
+  background: var(--pink-text);
 }
 
 .footer-content{
@@ -255,7 +272,7 @@ footer{
   font-size: 1.3rem;
   height: 100%;
   padding: 2rem 0 3rem 0;
-  color: #c9c9c9;
+  color: var(--grey-text);
   font-family: 'Cardo', serif;
 }
 
@@ -294,7 +311,7 @@ footer{
   padding: 5px;
   font-size: 1.5rem;
   transition: ease 0.5s;
-  color: #c9c9c9;
+  color: var(--grey-text);
 }
 
 .socials i:hover{
@@ -304,7 +321,7 @@ footer{
 }
 
 .footer-content a{
-  color: #c9c9c9;
+  color: var(--grey-text);
   padding: 0.25rem;
   font-family: 'Cardo', serif;
 }
@@ -347,6 +364,10 @@ footer .copyright{
     height: 100%;
   }
 
+  .hero-content h3{
+    font-size: 2rem;
+  }
+
   .previews{
     flex-direction: column;
     justify-content: center;
@@ -358,6 +379,10 @@ footer .copyright{
   .previews-content{
     width: 85%;
     margin: 0.5rem;
+  }
+
+  .title{
+    font-size: 2rem;
   }
 
   .testimonals{

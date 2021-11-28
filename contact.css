@@ -32,7 +32,7 @@
 .contact-info{
   width: 500px;
   background: #fff;
-  padding: 4rem 0 6rem 0;
+  padding: 4rem 0 2rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,7 +45,11 @@
   padding-bottom: 0.5rem;
   border-bottom: 3px dotted rgba(195, 158, 160);
   text-align: center;
+  color: var(--grey-text);
+  font-weight: 400;
+  font-family: 'Cardo', serif;
 }
+
 
 .form input,
 .form select,
@@ -71,7 +75,14 @@
 }
 
 .contact a{
-  color: #c9c9c9;
+  color: var(--pink-text);
+  font-size: 1.2rem;
+  font-family: 'Cardo', serif;
+  transition: ease 0.5s;
+}
+
+.contact a:hover{
+  color: #000;
 }
 
 .contact-socials i:hover{
@@ -96,4 +107,5 @@
 .contact-info{
   padding: 2rem 0 2rem 0;
 }
+
 }
