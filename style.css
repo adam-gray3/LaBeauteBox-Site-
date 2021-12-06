@@ -152,13 +152,14 @@ a{
   padding-bottom: 15px;
   text-transform: uppercase;
   font-weight: 500;
+  color: #fff;
 }
 
 .previews-content{
   width: 25%;
   border-radius: 6px;
   padding: 1rem;
-  color: #fff;
+  color: rgb(54,64,79);
    margin-bottom: 5rem;
    position: relative;
 }
