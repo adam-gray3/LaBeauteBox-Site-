@@ -28,18 +28,27 @@
     </nav>
   </header>
   <main class="contact">
-    <section class="form-container">
+    <section class="form-container contact-box">
       <form action="" class="form">
         <h2 class="form-heading">Contact Form</h2>
-        <input type="text" placeholder="Enter Name">
-        <input type="email" placeholder="Enter Email">
-        <input type="text" placeholder="Enter Contact Number">
-        <input type="text" placeholder="Enter Message">
-        <button type="button" class="white-btn btn">Submit</button>
+        <div class="input-fields">
+          <input type="text" placeholder="Enter Name" class="name">
+          <small class="error"></small>
+        </div>
+        <div class="input-fields">
+          <input type="email" placeholder="Enter Email" class="email">
+          <small></small>
+        </div>
+          <input type="text" placeholder="Enter Contact Number">
+        <div class="input-fields">
+          <input type="text" placeholder="Enter Message">
+          <small></small>
+        </div>
+          <button type="button" class="white-btn btn">Submit</button>
       </form>
     </section>
-    <section class="contact-info">
-      <h2 class="form-heading">Contact Form</h2>
+    <section class="contact-info contact-box">
+      <h2 class="form-heading">Contact Details</h2>
       <h3>Email Address:</h3>
         <a href="mailto:labeautebox@outlook.com?subject=WebsiteEnquiry">labeautebox@outlook.com</a>
       <h3>Contact Number:</h3>
@@ -72,5 +81,6 @@
     </div>
     <p class="copyright">Copyright &copy; 2020 - La Beaute Box | Website design by ASG Images</p>
   </footer>
+  <script src="form.js"></script>
 </body>
 </html>
