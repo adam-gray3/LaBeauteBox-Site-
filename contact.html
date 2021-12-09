@@ -29,22 +29,22 @@
   </header>
   <main class="contact">
     <section class="form-container contact-box">
-      <form action="" class="form">
+      <form action="" data-netlify="true" class="form" method="POST">
         <h2 class="form-heading">Contact Form</h2>
         <div class="input-fields">
-          <input type="text" placeholder="Enter Name" class="name">
-          <small class="error"></small>
+          <input type="text" name="name" placeholder="Enter Name" class="name">
+          <small></small>
         </div>
         <div class="input-fields">
-          <input type="email" placeholder="Enter Email" class="email">
+          <input name="email" placeholder="Enter Email" class="email">
           <small></small>
         </div>
           <input type="text" placeholder="Enter Contact Number">
         <div class="input-fields">
-          <input type="text" placeholder="Enter Message">
+          <input type="text" name="message" placeholder="Enter Message" class="message">
           <small></small>
         </div>
-          <button type="button" class="white-btn btn">Submit</button>
+          <button class="white-btn btn">Submit</button>
       </form>
     </section>
     <section class="contact-info contact-box">

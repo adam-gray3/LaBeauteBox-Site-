@@ -1,46 +1,45 @@
+const form = document.querySelector(".form");
 const name = document.querySelector(".name");
 const email = document.querySelector(".email");
-const btn = document.querySelector(".btn");
+const message = document.querySelector(".message");
 
 
+form.addEventListener("submit", checkAll);
 
-function checkAll(){
-  const nameValue = name.value.trim();
-  const emailValue = email.value.trim();
-
-  if(nameValue === ""){
-    showError(name, "Name cannot be empty");
-  }
-
-  if(emailValue === ""){
-    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if(re.test()){
-      console.log(emailValue)
-    } else{
-      showError(email, "Enter a valid Email!")
-    }
-
-  }
-}
-
-
+//functions
+//ERROR FUNCTION
 function showError(input, message){
   const formControl = input.parentElement;
+  formControl.className = "input-fields error";
+
   const small = formControl.querySelector("small");
   small.innerText = message;
-
-  formControl.className("input-fields error")
 }
 
-
-btn.addEventListener("click", checkAll);
-
-/*function checkEmail(input, message){
-  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  if(re.test(input.value.trim())){
-    console.log(email.value)
-  } else{
-    showError(input, "Enter Valid Email")
+//CHECKNAME FUNCTION
+function checkName(input){
+  if(input === ""){
+    showError(name, "Enter a valid name!")
   }
 };
-*/
+
+function checkEmail(input){
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if(re.test(input)){
+      return;
+    } else{
+      showError(email, "Enter a valid email!")
+    }
+};
+
+function checkAll(e){
+  const nameValue = name.value.trim();
+  const emailValue = email.value.trim();
+  const messageValue = message.value.trim();
+
+  e.preventDefault();
+  checkName(nameValue)
+  checkEmail(emailValue)
+  //later add in each function that i create for each check
+  
+}

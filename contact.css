@@ -30,11 +30,6 @@
   align-items: center;
 }
 
-.error{
-  position: absolute;
-  top: 0;
-  color: red;
-}
 
 .form-heading{
   font-family: 'Clicker Script', cursive;
@@ -103,13 +98,6 @@
   cursor: pointer;
 }
 
-form input.error{
-  border: 2px solid red;
-}
-
-form input.error::placeholder{
-  color: red;
-}
 
 @media(max-width: 767px){
 
