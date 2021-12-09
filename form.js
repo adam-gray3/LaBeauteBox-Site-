@@ -34,17 +34,14 @@ function checkEmail(input){
     }
 };
 
-function clearAll()
 
-function checkAll(){
-  
+function checkAll(e){
+  e.preventDefault();
   const nameValue = name.value.trim();
   const emailValue = email.value.trim();
   const messageValue = message.value.trim();
 
-
   checkName(nameValue)
   checkEmail(emailValue)
-  //later add in each function that i create for each check
 
 }
