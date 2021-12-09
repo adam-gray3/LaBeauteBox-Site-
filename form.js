@@ -20,6 +20,8 @@ function showError(input, message){
 function checkName(input){
   if(input === ""){
     showError(name, "Enter a valid name!")
+  } else{
+    return;
   }
 };
 
@@ -32,14 +34,14 @@ function checkEmail(input){
     }
 };
 
-function checkAll(e){
+function checkAll(){
   const nameValue = name.value.trim();
   const emailValue = email.value.trim();
   const messageValue = message.value.trim();
 
-  e.preventDefault();
+  
   checkName(nameValue)
   checkEmail(emailValue)
   //later add in each function that i create for each check
-  
+
 }
