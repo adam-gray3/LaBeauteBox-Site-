@@ -34,8 +34,10 @@ function checkEmail(input){
     }
 };
 
-function checkAll(e){
-  e.preventDefault();
+function clearAll()
+
+function checkAll(){
+  
   const nameValue = name.value.trim();
   const emailValue = email.value.trim();
   const messageValue = message.value.trim();
