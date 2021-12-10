@@ -16,19 +16,23 @@ function showError(input, message){
   small.innerText = message;
 }
 
+function success(){
+  form.reset();
+}
+
 //CHECKNAME FUNCTION
 function checkName(input){
   if(input === ""){
     showError(name, "Enter a valid name!")
   } else{
-    return;
+    success();
   }
 };
 
 function checkEmail(input){
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if(re.test(input)){
-      return;
+      success();
     } else{
       showError(email, "Enter a valid email!")
     }
