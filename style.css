@@ -2,6 +2,7 @@
   --grey-text: #696868;
   --pink-text: rgba(248, 229, 229);
   --grey-btn: #c9c9c9;
+  --dark-text: rgba(156,158,144);
 }
 
 
@@ -28,10 +29,10 @@
   padding: 0.5rem 1rem 0.5rem;
   border-radius: 5px;
   border: none;
-  background: var(--grey-btn);
+  background: #fff;
   font-family: 'Cardo', serif;
   font-size: 1.4rem;
-  color: #fff;
+  color: var(--dark-text);
   margin-top: 0.5rem;
 }
 
