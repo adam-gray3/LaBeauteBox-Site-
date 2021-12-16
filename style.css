@@ -179,7 +179,8 @@ a{
   justify-content: center;
 }
 
-.flip-card:hover{
+.flip-card:hover,
+.flip-card:active{
   transform: rotateY(180deg);
 }
 
