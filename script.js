@@ -56,3 +56,5 @@ function prevSlide(){
 };
 
 setInterval(nxtSlide, 9000);
+
+//HOMEPAGE IMAGE FLIP

@@ -139,6 +139,66 @@ a{
   color: var(--pink-text);
 }
 
+.preview-section{
+  display: flex;
+  padding: 2rem;
+}
+
+.flip-card{
+  width: 35%;
+  height: 275px;
+  margin: 1rem;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.front-card{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.back-card{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: var(--pink-text);
+  color: var(--grey-text);
+  transform: rotateY(180deg);
+  border-radius: 20px;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-card:hover{
+  transform: rotateY(180deg);
+}
+
+.front-card.hands{
+  background: url("../images/hands.jpg") no-repeat center center/cover;
+  border-radius: 20px;
+}
+
+.front-card.feet{
+  background: url("../images/set-2.jpg") no-repeat center center/cover;
+  border-radius: 20px;
+}
+
+.front-card.makeup{
+  background: url("../images/makeup.jpg") no-repeat center center/cover;
+  border-radius: 20px;
+}
+
+/*
 .previews{
   font-family: 'Cardo', serif;
   display: flex;
@@ -159,6 +219,7 @@ a{
 
 .previews-content{
   width: 25%;
+  height: 250px;
   padding: 1rem;
    margin-bottom: 5rem;
    position: relative;
@@ -182,9 +243,13 @@ a{
 }
 
 .hands{
-  background: url("../images/home-manicure.jpg") no-repeat center center/cover;
+ background: url("../images/home-manicure.jpg") no-repeat center center/cover;
   position: relative;
   z-index: 1;
+}
+
+.hide{
+  display: none;
 }
 
 .feet{
@@ -198,7 +263,7 @@ a{
   position: relative;
   z-index: 1;
 }
-
+*/
 .image-test{
   display: flex;
   justify-content: center;
@@ -388,6 +453,15 @@ footer .copyright{
 
   .hero-content h3{
     font-size: 2rem;
+  }
+
+  .preview-section{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flip-card{
+    width: 100%;
   }
 
   .previews{
