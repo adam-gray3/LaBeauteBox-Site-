@@ -180,7 +180,8 @@ a{
 }
 
 .flip-card:hover,
-.flip-card:active{
+.flip-card:active,
+.flip-card:focus{
   transform: rotateY(180deg);
 }
 
