@@ -171,6 +171,9 @@ a{
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  -webkit-perspective: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
   background: var(--pink-text);
   color: var(--grey-text);
   transform: rotateY(180deg);
@@ -186,7 +189,6 @@ a{
 
 .flip-card.flip{
   transform: rotateY(180deg);
--webkit-transform: rotateY(180deg);
 }
 
 .front-card.hands{
