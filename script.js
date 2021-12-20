@@ -62,6 +62,6 @@ images.forEach(flipImage);
 
 function flipImage(image){
   image.addEventListener("click", function(){
-    image.classList.add("flip")
+    image.classList.toggle("flip")
   })
 }
