@@ -16,8 +16,6 @@ let items = [{
 }
 ];
 
-
-
 //SETUP VARIABLES FOR ALL DOM ITEMS AND START POINT FOR slideshow
 let currentSlide = 0;
 
@@ -58,3 +56,12 @@ function prevSlide(){
 setInterval(nxtSlide, 9000);
 
 //HOMEPAGE IMAGE FLIP
+let images = document.querySelectorAll(".flip-card");
+
+images.forEach(flipImage);
+
+function flipImage(image){
+  image.addEventListener("click", function(){
+    image.classList.add("flip")
+  })
+}

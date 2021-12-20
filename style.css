@@ -179,9 +179,9 @@ a{
   justify-content: center;
 }
 
-.flip-card:hover,
-.flip-card:active,
-.flip-card:focus{
+
+.flip-card.flip,
+.flip-card:hover{
   transform: rotateY(180deg);
 }
 
@@ -472,11 +472,6 @@ footer .copyright{
     align-items: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-
-  .previews-content{
-    width: 85%;
-    margin: 0.5rem;
   }
 
   .title{

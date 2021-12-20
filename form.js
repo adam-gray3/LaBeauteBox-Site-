@@ -22,9 +22,6 @@ form.addEventListener("kwCustomRuleSet", function(){
   )
 });
 
-
-
-
 //functions
 //ERROR FUNCTION
 function showError(input, message){
@@ -65,5 +62,4 @@ function checkAll(e){
   /*checkName(nameValue)
   checkEmail(emailValue)
   checkMessage(messageValue)*/
-
 }
