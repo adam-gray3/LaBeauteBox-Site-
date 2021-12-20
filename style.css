@@ -180,8 +180,7 @@ a{
 }
 
 
-.flip-card.flip,
-.flip-card:hover{
+.flip-card.flip{
   transform: rotateY(180deg);
 }
 
@@ -464,6 +463,10 @@ footer .copyright{
 
   .flip-card{
     width: 100%;
+  }
+
+  .flip-card:hover{
+
   }
 
   .previews{
