@@ -187,7 +187,8 @@ a{
 }
 
 
-.flip-card.flip{
+.flip-card.flip,
+.flip-card:hover{
   transform: rotateY(180deg);
 }
 
