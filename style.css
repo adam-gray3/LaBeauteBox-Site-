@@ -187,9 +187,10 @@ a{
 }
 
 
-
+.flip-card.flip,
 .flip-card:hover{
-  transform: rotateY(180deg);
+-webkit-transform: rotateY(180deg);
+transform: rotateY(180deg);
 }
 
 .front-card.hands{
@@ -473,9 +474,6 @@ footer .copyright{
     width: 100%;
   }
 
-  .flip-card.flip{
-    transform: rotateY(180deg);
-  }
 
   .previews{
     flex-direction: column;
