@@ -98,6 +98,17 @@
   cursor: pointer;
 }
 
+.kw-alert-error{
+  display: none;
+}
+
+.name.kw-border-error{
+  border: none;
+}
+
+.kw-field-error-message{
+  color: var(--grey-text);
+}
 
 @media(max-width: 767px){
 

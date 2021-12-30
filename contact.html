@@ -29,10 +29,10 @@
   </header>
   <main class="contact">
     <section class="form-container contact-box" id="form">
-      <form class="form kwes-form" method="POST" action="https://kwesforms.com/api/foreign/forms/68xrVPV9wtArYlxx2h5B">
+      <form class="form" method="POST" action="form.php">
         <h2 class="form-heading">Contact Form</h2>
         <div class="input-fields">
-          <input type="text" name="name" placeholder="Enter Name" class="name">
+          <input type="text" name="name" placeholder="Enter Name" class="name" rules="required">
           <small></small>
         </div>
         <div class="input-fields">
@@ -41,7 +41,7 @@
         </div>
           <input type="text" name="number" placeholder="Enter Contact Number">
         <div class="input-fields">
-          <input type="text" name="message" placeholder="Enter Message" class="message">
+          <input type="text" name="message" placeholder="Enter Message" class="message" rules="required">
           <small></small>
         </div>
         <input type="submit" class="white-btn btn submit">
@@ -82,7 +82,7 @@
     </div>
     <p class="copyright">Copyright &copy; 2020 - La Beaute Box | Website design by ASG Images</p>
   </footer>
-<script src="https://kwesforms.com/v2/kwes-script.js" ></script>
+<!--<script src="https://kwesforms.com/v2/kwes-script.js" ></script>-->
 <script src="form.js"></script>
 </body>
 </html>

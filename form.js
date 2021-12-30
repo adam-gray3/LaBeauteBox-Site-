@@ -4,8 +4,8 @@ const email = document.querySelector(".email");
 const message = document.querySelector(".message");
 
 
-/*form.addEventListener("submit", checkAll);
-*/
+form.addEventListener("submit", checkAll);
+
 const nameError = "Enter valid name!";
 
 form.addEventListener("kwCustomRuleSet", function(){
@@ -30,7 +30,7 @@ function showError(input, message){
   const small = formControl.querySelector("small");
   small.innerText = message;
 }
-/*
+
 //CHECKNAME FUNCTION
 function checkName(input){
   if(input === ""){
@@ -51,7 +51,7 @@ function checkMessage(input){
     showError(message, "Enter a small message!");
   }
 }
-*/
+
 
 function checkAll(e){
   e.preventDefault();
@@ -59,7 +59,7 @@ function checkAll(e){
   const emailValue = email.value.trim();
   const messageValue = message.value;
 
-  /*checkName(nameValue)
+  checkName(nameValue)
   checkEmail(emailValue)
-  checkMessage(messageValue)*/
+  checkMessage(messageValue)
 }

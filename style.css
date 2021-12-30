@@ -14,7 +14,7 @@
   background: #fff;
   font-family: 'Cardo', serif;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: var(--grey-text);
   cursor: pointer;
 }
@@ -29,7 +29,7 @@
   padding: 0.5rem 1rem 0.5rem;
   border-radius: 5px;
   border: none;
-  background: #fff;
+  background: var(--pink-text);
   font-family: 'Cardo', serif;
   font-size: 1.4rem;
   color: var(--dark-text);
@@ -37,8 +37,8 @@
 }
 
 .grey-btn:hover{
-  background: var(--pink-text);
-  color: var(--grey-text);
+  background: var(--grey-text);
+  color: #fff;
 }
 
 
@@ -135,13 +135,13 @@ a{
   font-family: 'Clicker Script', cursive;
   font-weight: 600;
   font-size: 4rem;
-  padding-bottom: 3rem;
-  color: var(--pink-text);
+  padding-bottom: 2rem;
+  color: rgb(124,115,115);
 }
 
 .preview-section{
   display: flex;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .flip-card{
@@ -150,9 +150,13 @@ a{
   margin: 1rem;
   position: relative;
   transform-style: preserve-3d;
-  transition: all 1s ease;
+  transition: all 1.5s ease;
   border-radius: 20px;
   cursor: pointer;
+}
+
+.flip-card h4{
+  font-size: 1.2rem;
 }
 
 .flip-card a{
@@ -357,6 +361,13 @@ transform: rotateY(180deg);
   width: 40px;
 }
 
+.safety{
+  display: inline-block;
+  margin: 0;
+  padding: 1rem;
+  background: var(--grey-text);
+}
+
 /*Footer Styling*/
 footer{
   position: relative;
@@ -400,7 +411,7 @@ footer{
   outline: none;
 }
 
-.footer-content h4{
+.footer-content h3{
   margin-bottom: 0.5rem;
   font-weight: lighter;
   font-size: 1.5rem;
