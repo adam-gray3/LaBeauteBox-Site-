@@ -149,6 +149,12 @@
       padding: 1rem;
     }
 
+    .icon-brow,
+    .icon-makeup{
+      width: 40px;
+    }
+
+
     .flower{
       width: 80px;
     }
