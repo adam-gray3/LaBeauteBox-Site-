@@ -220,10 +220,12 @@ transform: rotateY(180deg);
 .image-test{
   display: flex;
   justify-content: center;
+
 }
 
 .image-test img{
-  width: 70%;
+  width: 50%;
+  margin-top: 3rem;
 }
 
 /*SLIDESHOW SECTION*/
