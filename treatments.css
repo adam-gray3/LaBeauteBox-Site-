@@ -156,6 +156,7 @@
     .green-plant{
       top: 23%;
       width: 80px;
+      transform: rotate(20deg);
     }
 
 
