@@ -67,6 +67,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: none;
 }
 
 .green-plant{
@@ -149,6 +150,11 @@
     }
 
     .flower{
+      width: 80px;
+    }
+
+    .green-plant{
+      top: 23%;
       width: 80px;
     }
 
