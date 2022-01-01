@@ -17,6 +17,15 @@
   padding-bottom: 1rem;
 }
 
+.icon-feet{
+  width: 110px;
+}
+
+.icon-brow,
+.icon-makeup{
+  width: 60px;
+}
+
 .price-list h5{
   font-size: 1.4rem;
   margin-top: 0.5rem;
@@ -50,6 +59,22 @@
   top: -30px;
   left: 0;
   transform: rotate(35deg);
+}
+
+.green{
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.green-plant{
+  width: 110px;
+  position: absolute;
+  top: -30px;
+  right: 0;
+  transform: scaleX(-1) rotate(20deg);
 }
 
 /*MEDIA QURIES*/
