@@ -13,7 +13,7 @@
 }
 
 .icon{
-  width: 50px;
+  width: 90px;
   padding-bottom: 1rem;
 }
 
@@ -22,7 +22,7 @@
   margin-top: 0.5rem;
   font-family: 'Cardo', serif;
   font-weight: bold;
-  color: var(--dark-text)
+  color: rgb(124,115,115);
 }
 
 .price-list p{
@@ -35,13 +35,21 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-
+  position: relative;
 }
 
 .price-card{
   border: 8px solid silver;
   border-radius: 12px;
   padding: 2rem;
+}
+
+.flower{
+  width: 100px;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  transform: rotate(35deg);
 }
 
 /*MEDIA QURIES*/
@@ -113,6 +121,10 @@
 
     .price-list{
       padding: 1rem;
+    }
+
+    .flower{
+      width: 80px;
     }
 
 

@@ -2,17 +2,17 @@
 let items = [{
   id: 1,
   text: "I suffer really badly with dry and cracked skin on my feet and Emma makes them feel and look beautiful! My nails always last and look so glossy! I cant recommend her enough, she makes me feel comfortable and relaxed.",
-  image: "../images/white-towel.png"
+  image: "../images/testimonal-cream.png"
 },
 {
   id: 2,
   text: "I've always loved Emma doing my nails as she is really gentle compared to other places i've been. She also uses really good products that last a long time and has an abundnace of colours to choose. Emma is really easy to get along with, I wouldnt use anybody else.",
-  image: "../images/white-hand.png"
+  image: "../images/testimonal-nails.png"
 },
 {
   id: 3,
   text: "Excellent service always with a smile! Enjoy my manicures everytime.",
-  image: "../images/white-spa.png"
+  image: "../images/testimonal-hands.png"
 }
 ];
 
@@ -65,3 +65,26 @@ function flipImage(image){
     image.classList.toggle("flip")
   })
 }
+
+//Modal Function
+
+const modal = document.querySelector(".modal-container");
+const modalBtn = document.querySelector(".safety");
+const closeBtn = document.querySelector(".close-modal");
+
+modalBtn.addEventListener("click", showModal);
+closeBtn.addEventListener("click", closeModal);
+
+function showModal(){
+  modal.classList.add("toggle-modal")
+};
+
+function closeModal(){
+  modal.classList.remove("toggle-modal")
+};
+
+window.addEventListener("click", function(e){
+  if(e.target == modal){
+    closeModal();
+  }
+})

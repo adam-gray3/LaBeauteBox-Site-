@@ -22,7 +22,11 @@
 
     //sending email
     $send = mail($to, $subject, $body, $headers);
-
+    if($send){
+      echo 'We will be in touch'
+    } else{
+      echo "Error"
+    }
 
   }
 ?>
