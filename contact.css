@@ -65,6 +65,7 @@
   border-radius: 6px;
   margin: 0.75rem;
   background: #fff;
+  -webkit-appearance: none;
 }
 
 .form input:focus{
