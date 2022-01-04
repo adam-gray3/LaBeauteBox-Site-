@@ -313,16 +313,10 @@ transform: rotateY(180deg);
   color: #fff;
 }
 
-/*.modal-container{
-  text-align: center;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  pointer-events: none;
-  transition: opacity 0.5s ease;
-}*/
+.safety:hover{
+  color: var(--dark-text);
+
+}
 
 .modal-container{
   background-color: rgba(0,0,0,0.3);
@@ -465,7 +459,6 @@ footer .copyright{
     margin: 0;
   }
 
-
   .navbar li a{
     font-size: 1rem;
   }
@@ -489,7 +482,6 @@ footer .copyright{
   .flip-card{
     width: 100%;
   }
-
 
   .previews{
     flex-direction: column;
@@ -568,7 +560,7 @@ footer .copyright{
     display: none;
   }
 
-  footer h4{
+  footer h3{
     display: none;
   }
 }

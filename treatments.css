@@ -57,26 +57,34 @@
   width: 100px;
   position: absolute;
   top: -30px;
-  left: 0;
+  left: 10px;;
   transform: rotate(35deg);
 }
 
-.green{
-  width: 200px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
-}
-
 .green-plant{
-  width: 110px;
+  width: 100px;
   position: absolute;
-  top: -30px;
+  top: -20px;
   right: 0;
   transform: scaleX(-1) rotate(20deg);
 }
+
+.green-plant2{
+  width: 100px;
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+  transform: scaleX(-1)rotate(35deg);
+}
+
+.flower2{
+  width: 100px;
+  position: absolute;
+  bottom: -30px;
+  right: 10px;
+  transform: rotate(35deg);
+}
+
 
 /*MEDIA QURIES*/
 
@@ -131,6 +139,7 @@
 
     .price-cont{
       grid-template-columns: 1fr;
+
     }
 
     .price-card{
@@ -154,17 +163,28 @@
       width: 40px;
     }
 
-
     .flower{
-      width: 80px;
+      width: 70px;
     }
 
     .green-plant{
       top: 23%;
-      width: 80px;
-      transform: rotate(20deg);
+      width: 70px;
+      transform: rotate(10deg);
     }
 
+    .flower2{
+      width: 60px;
+      transform:scaleX(-1) rotate(30deg);
+      right: 10px;
+      bottom: 285px;
+    }
+
+    .green-plant2{
+      width: 70px;
+      transform: scaleX(-1) rotate(35deg);
+      left: 15px;
+    }
 
   .footer-content{
     flex-direction: column;

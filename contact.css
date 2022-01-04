@@ -9,8 +9,7 @@
 }
 
 .contact-box{
-  width: 500px;
-  height: 450px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,9 +17,11 @@
   border-radius: 8px
 }
 
+
 .form{
   background: rgba(248, 229, 229);
   color: grey;
+  padding: 0.5rem 0;
 }
 
 .input-fields{
@@ -102,9 +103,6 @@
 
 }
 
-.contact .form,
-.contact-info{
-  padding: 2rem 0 2rem 0;
-}
+
 
 }
