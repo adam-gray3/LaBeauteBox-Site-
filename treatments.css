@@ -85,6 +85,19 @@
   transform: rotate(35deg);
 }
 
+.green-plant3{
+  width: 100px;
+  position: absolute;
+  bottom: 35%;
+  display: none;
+}
+
+.flower3{
+  width: 100px;
+  position: absolute;
+  display: none;
+}
+
 
 /*MEDIA QURIES*/
 
@@ -183,7 +196,23 @@
     .green-plant2{
       width: 70px;
       transform: scaleX(-1) rotate(35deg);
-      left: 15px;
+      left: 20px;
+    }
+
+    .green-plant3{
+      display: block;
+      width: 70px;
+      right: 15px;
+      bottom: 36%;
+      transform: scaleX(-1) rotate(20deg);
+    }
+
+    .flower3{
+      display: block;
+      width: 70px;
+      transform: scaleX(-1) rotate(-35deg);
+      top: 27%;
+      left: 24px;
     }
 
   .footer-content{
