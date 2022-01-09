@@ -328,6 +328,7 @@ transform: rotateY(180deg);
   opacity: 0;
   pointer-events: none;
     z-index: 1;
+    transition: all ease 1s;
 }
 
 .modal{
