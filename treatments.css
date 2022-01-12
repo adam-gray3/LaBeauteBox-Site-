@@ -182,8 +182,9 @@
 
     .green-plant{
       top: 23%;
+      right: -10px;
       width: 70px;
-      transform: rotate(10deg);
+      transform: rotate(20deg);
     }
 
     .flower2{
