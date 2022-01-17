@@ -385,7 +385,6 @@ footer{
 }
 
 .footer-content .email,
-.footer-content .offers,
 .footer-content .socials{
   display: flex;
   flex-direction: column;
@@ -393,6 +392,11 @@ footer{
 
 .footer-content .email{
   text-align: center;
+}
+
+.offers-form{
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-content .offers input,
