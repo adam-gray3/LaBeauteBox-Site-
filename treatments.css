@@ -70,7 +70,7 @@
 }
 
 .green-plant2{
-  width: 100px;
+  width: 90px;
   position: absolute;
   bottom: -35px;
   left: 0;
@@ -78,23 +78,34 @@
 }
 
 .flower2{
-  width: 100px;
+  width: 90px;
   position: absolute;
-  bottom: -30px;
-  right: 10px;
-  transform: rotate(35deg);
+  bottom: -40px;
+  right: -10px;
+  transform: rotate(30deg);
 }
 
 .green-plant3{
-  width: 100px;
   position: absolute;
-  bottom: 35%;
+  width: 100px;
   display: none;
 }
 
 .flower3{
-  width: 100px;
   position: absolute;
+  width: 100px;
+  display: none;
+}
+
+.flower4{
+  position: absolute;
+  width: 90px;
+  display: none;
+}
+
+.green-plant4{
+  position: absolute;
+  width: 70px;
   display: none;
 }
 
@@ -185,37 +196,53 @@
       right: -10px;
       width: 70px;
       transform: rotate(20deg);
-  
     }
 
     .flower2{
-      width: 60px;
+      width: 70px;
       transform:scaleX(-1) rotate(30deg);
       right: 10px;
-      bottom: 285px;
     }
 
     .green-plant2{
-      width: 70px;
-      transform: scaleX(-1) rotate(35deg);
-      left: 20px;
+      width: 60px;
+      transform: rotate(35deg);
+      left: 10px;
+      bottom: 10%;
     }
 
     .green-plant3{
       display: block;
       width: 70px;
-      right: 15px;
-      bottom: 36%;
-      transform: scaleX(-1) rotate(20deg);
+      top: 56%;
+      right: 0;
+      transform: rotate(20deg)
     }
 
     .flower3{
       display: block;
       width: 70px;
-      transform: scaleX(-1) rotate(-35deg);
+      transform: rotate(35deg);
       top: 27%;
-      left: 24px;
+      left: 0;
     }
+
+    .flower4{
+      width: 70px;
+      display: block;
+      top: 59%;
+      left: 0;
+      transform: scaleX(-1) rotate(-35deg);
+    }
+
+    .green-plant4{
+      width: 70px;
+      display: block;
+      right: 0;
+      bottom: 13%;
+      transform: rotate(35deg);
+    }
+
 
   .footer-content{
     flex-direction: column;

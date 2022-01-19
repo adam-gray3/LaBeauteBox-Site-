@@ -203,7 +203,7 @@ transform: rotateY(180deg);
 }
 
 .front-card.hands{
-  background: url("../images/hands.jpg") no-repeat center center/cover;
+  background: url("../images/home-manicure.jpg") no-repeat center center/cover;
   border-radius: 20px;
 }
 
