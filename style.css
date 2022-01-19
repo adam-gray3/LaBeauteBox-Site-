@@ -200,7 +200,6 @@ a{
   padding-bottom: 0.5rem;
 }
 
-
 .flip-card.flip,
 .flip-card:hover{
 -webkit-transform: rotateY(180deg);
@@ -208,7 +207,7 @@ transform: rotateY(180deg);
 }
 
 .front-card.hands{
-  background: url("../images/home-manicure.jpg") no-repeat center center/cover;
+  background: url("../images/home-manicure.jpg") no-repeat center/cover;
   border-radius: 20px;
 }
 
@@ -259,7 +258,6 @@ transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .slide-content{
