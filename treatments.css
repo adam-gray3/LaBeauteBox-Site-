@@ -56,7 +56,6 @@
 .features{
   position: absolute;
   overflow: hidden;
-
 }
 
 .flower{
@@ -77,14 +76,14 @@
   width: 90px;
   bottom: -35px;
   left: 0;
-  transform: scaleX(-1)rotate(35deg);
+  transform: scaleX(-1)rotate(20deg);
 }
 
 .flower2{
   width: 100px;
   bottom: -40px;
   right: -10px;
-  transform: rotate(30deg);
+  transform: rotate(20deg);
 }
 
 .green-plant3{
@@ -199,7 +198,6 @@
     .flower2{
       width: 70px;
       transform:scaleX(-1) rotate(30deg);
-      right: 0;
     }
 
     .green-plant2{
