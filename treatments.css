@@ -2,6 +2,7 @@
 .price-list{
   text-align: center;
   padding: 3rem;
+  overflow: hidden;
 }
 
 .price-list h2{
@@ -55,7 +56,6 @@
 
 .features{
   position: absolute;
-  overflow: hidden;
 }
 
 .flower{
