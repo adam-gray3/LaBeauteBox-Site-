@@ -343,7 +343,7 @@ transform: rotateY(180deg);
   color: var(--dark-text);
   background: var(--pink-text);
   border-radius: 8px;
-  padding: 3rem;
+  padding: 2rem;
   text-align: center;
 }
 
@@ -488,7 +488,7 @@ footer .copyright{
   }
 
   .flip-card{
-    width: 100%;
+    width: 90%;
   }
 
   .previews{
@@ -533,7 +533,7 @@ footer .copyright{
   }
 
   .modal{
-    width: 90%;
+    width: 80%;
   }
 
   .footer-content{
@@ -551,24 +551,11 @@ footer .copyright{
     display: none;
   }
 
-  .footer-content .offers{
-    width: 80%;
-  }
-
-    .footer-content .offers h4{
-      display: block;
-    }
-
   .footer-content div{
     padding-bottom: 0.5rem;
   }
 
-
-  footer .copyright{
-    display: none;
-  }
-
-  footer h3{
+  .socials h3{
     display: none;
   }
 }
