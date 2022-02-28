@@ -510,10 +510,12 @@ footer .copyright{
 
   .description{
     padding: 3rem;
+    padding-bottom: 1rem;
   }
 
   .description h1{
     font-size: 2.5rem;
+    line-height: 2.5rem;
   }
 
   .image-test img{
