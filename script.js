@@ -13,6 +13,11 @@ let items = [{
   id: 3,
   text: "Excellent service always with a smile! Enjoy my manicures everytime.",
   image: "../images/testimonal-hands.png"
+},
+{
+  id: 4,
+  text: "Since having my nails done by Emma and following her aftercare advice my nails last 3 weeks, the longest lasting manicure I’ve had. I’ve seen such an improvement in the condition of my nails and cuticles.",
+  image: "../images/testimonal-pedicure.png"
 }
 ];
 
@@ -39,7 +44,7 @@ prevBtn.addEventListener("click", prevSlide)
 
 function nxtSlide(){
   currentSlide++;
-  if(currentSlide > 2){
+  if(currentSlide > 3){
     currentSlide = 0;
   }
   showSlide();

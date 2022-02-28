@@ -217,7 +217,7 @@ transform: rotateY(180deg);
 }
 
 .front-card.makeup{
-  background: url("../images/makeup.jpg") no-repeat center center/cover;
+  background: url("../images/makeup2.png") no-repeat center center/cover;
   border-radius: 20px;
 }
 
@@ -509,7 +509,11 @@ footer .copyright{
 
 
   .description{
-    display: none;
+    padding: 3rem;
+  }
+
+  .description h1{
+    font-size: 2.5rem;
   }
 
   .image-test img{
