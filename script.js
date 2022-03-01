@@ -64,12 +64,18 @@ setInterval(nxtSlide, 9000);
 let images = document.querySelectorAll(".flip-card");
 
 images.forEach(flipImage);
-
 function flipImage(image){
   image.addEventListener("click", function(){
-    image.classList.toggle("flip")
+    image.classList.toggle("flip");
   })
 }
+
+const observer = new IntersectionObserver(entries => {
+  console.log(entries)
+})
+
+
+
 
 //Modal Function
 
