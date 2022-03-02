@@ -77,6 +77,7 @@ function screenChange(e){
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         entry.target.classList.toggle("rotate", entry.isIntersecting)
+        if(entry.isIntersecting) observer.unobserve(entry.target)
       })
     }, {
       threshold: 0.7,
