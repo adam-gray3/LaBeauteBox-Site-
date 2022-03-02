@@ -151,7 +151,7 @@ a{
   margin: 1rem;
   position: relative;
   transform-style: preserve-3d;
-  transition: all 2.5s ease;
+  transition: all 1.5s ease;
   border-radius: 20px;
   cursor: pointer;
 }
@@ -493,6 +493,7 @@ footer .copyright{
 
   .flip-card{
     width: 90%;
+    transition: all 4s ease;
   }
 
   .previews{
