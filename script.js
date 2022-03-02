@@ -62,7 +62,6 @@ setInterval(nxtSlide, 9000);
 
 //HOMEPAGE IMAGE FLIP
 let images = document.querySelectorAll(".flip-card");
-
 images.forEach(flipImage);
 function flipImage(image){
   image.addEventListener("click", function(){
@@ -70,11 +69,27 @@ function flipImage(image){
   })
 }
 
-const observer = new IntersectionObserver(entries => {
-  console.log(entries)
-})
+//MOBILE ROTATE
+const mediaQuery = window.matchMedia("(max-width: 767px)");
 
+function screenChange(e){
+  if(e.matches){
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        entry.target.classList.toggle("rotate", entry.isIntersecting)
+      })
+    }, {
+      threshold: 0.7,
+    })
 
+    images.forEach(image => {
+      observer.observe(image)
+    })
+  }
+}
+
+mediaQuery.addListener(screenChange);
+screenChange(mediaQuery)
 
 
 //Modal Function

@@ -151,7 +151,7 @@ a{
   margin: 1rem;
   position: relative;
   transform-style: preserve-3d;
-  transition: all 1.5s ease;
+  transition: all 2.5s ease;
   border-radius: 20px;
   cursor: pointer;
 }
@@ -172,7 +172,6 @@ a{
   -webkit-perspective: 0;
     -webkit-backface-visibility: hidden;
     -webkit-transform: translate3d(0,0,0);
-
 }
 
 .back-card{
@@ -200,8 +199,13 @@ a{
   padding-bottom: 0.5rem;
 }
 
-.flip-card.flip,
-.flip-card:hover{
+.flip-card.rotate{
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+
+.flip-card:hover,
+.flip-card.flip{
 -webkit-transform: rotateY(180deg);
 transform: rotateY(180deg);
 }
