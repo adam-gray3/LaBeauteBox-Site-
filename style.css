@@ -363,7 +363,7 @@ transform: rotateY(180deg);
   font-family: 'Cardo', serif;
   font: 1.2rem;
   font-weight: bold;
-  margin-bottom: 1.5rem;
+  
 }
 
 .toggle-modal{
@@ -544,7 +544,7 @@ footer .copyright{
   }
 
   .modal{
-    width: 80%;
+    width: 85%;
   }
 
   .footer-content{
