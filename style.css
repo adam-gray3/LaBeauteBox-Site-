@@ -228,7 +228,6 @@ transform: rotateY(180deg);
 .image-test{
   display: flex;
   justify-content: center;
-
 }
 
 .image-test img{
