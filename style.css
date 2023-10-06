@@ -99,6 +99,58 @@ a{
   border-bottom: 2px solid rgba(195, 158, 160, 0.6);
 }
 
+.hamburger{
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  opacity: 0;
+}
+
+.mobile-menu{
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s ease;
+}
+
+.mobile-menu.open{
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 1;
+
+}
+
+.mobile-nav{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.close{
+  position: fixed;
+  top: 20px;;
+  right: 30px;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.open-nav li{
+  padding: 0.75rem;
+}
+
+.open-nav a{
+  font-size: 2rem;
+  color: #fff;
+}
+
 .hero{
   background: url("../images/hero-test2-test.jpg") no-repeat center center/cover;
   width: 100%;
@@ -109,7 +161,6 @@ a{
   display: flex;
   flex-direction: column;
   align-items: center;
-
   padding-top: 4rem;
   height: 90%;
 }
@@ -124,18 +175,34 @@ a{
   padding-bottom: 1rem;
 }
 
+.outer-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 3rem;
+}
+
+.book-btn{
+  margin: 2rem;
+}
+
+.book-btn a {
+  color: #000;
+}
+
 .description {
   font-family: 'Cardo', serif;
   text-align: center;
-  padding: 5rem 6rem 4rem;
   line-height: 1.5rem;
   color: var(--grey-text);
+  padding: 2rem;
 }
 
 .description h1{
   font-family: 'Clicker Script', cursive;
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 2rem;
   padding-bottom: 2rem;
   color: var(--dark-text);
 }
@@ -150,41 +217,18 @@ a{
   height: 275px;
   margin: 1rem;
   position: relative;
-  transform-style: preserve-3d;
-  transition: all 1.5s ease;
   border-radius: 20px;
-  cursor: pointer;
-}
-
-.flip-card h4{
-  font-size: 1.2rem;
 }
 
 .flip-card a{
   margin-top: 1rem;
 }
 
-.front-card{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  -webkit-perspective: 0;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translate3d(0,0,0);
-}
-
 .back-card{
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
-  -webkit-perspective: 0;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translate3d(0,0,0);
-  background: var(--pink-text);
-  color: var(--grey-text);
-  transform: rotateY(180deg);
+  color: #fff;
   border-radius: 20px;
   text-align: center;
   display: flex;
@@ -194,12 +238,41 @@ a{
   padding: 1rem;
 }
 
+.back-card::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 20px;
+}
+
 .back-card h4{
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
 }
 
-.flip-card.rotate{
+.back-card h4,p,a {
+  position: relative;
+}
+
+.back-card.feet{
+  background: url("../images/set-2.jpg") no-repeat center/cover;
+}
+
+.back-card.hands{
+  background: url("../images/Hand-Cream-Group-shot-7.png") no-repeat center/cover;
+
+}
+
+.back-card.makeup{
+  background: url("../images/makeup2.png") no-repeat center/cover;
+}
+
+
+/* .flip-card.rotate{
   -webkit-transform: rotateY(360deg);
   transform: rotateY(360deg);
 }
@@ -223,7 +296,7 @@ transform: rotateY(180deg);
 .front-card.makeup{
   background: url("../images/makeup2.png") no-repeat center center/cover;
   border-radius: 20px;
-}
+} */
 
 .image-test{
   display: flex;
@@ -234,6 +307,7 @@ transform: rotateY(180deg);
   width: 50%;
   margin-top: 3rem;
 }
+
 
 /*SLIDESHOW SECTION*/
 
@@ -292,7 +366,7 @@ transform: rotateY(180deg);
 }
 
 .prev-btn{
-  left: 2%;;
+  left: 2%;
 }
 
 .testimonal{
@@ -305,70 +379,6 @@ transform: rotateY(180deg);
 }
 
 
-/*COVID MODAL*/
-.safety{
-  margin: auto;
-  margin-bottom: 2rem;
-  padding: 0.5rem;
-  background: #c9c9c9;
-  border-radius: 6px;
-  border: none;
-  display: block;
-  padding: 0.75rem;
-  cursor: pointer;
-  color: #fff;
-}
-
-.safety:hover{
-  color: var(--dark-text);
-
-}
-
-.modal-container{
-  background-color: rgba(0,0,0,0.3);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  pointer-events: none;
-    z-index: 1;
-    transition: all ease 1s;
-}
-
-.modal{
-  width: 60%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--dark-text);
-  background: var(--pink-text);
-  border-radius: 8px;
-  padding: 1rem;
-  text-align: center;
-}
-
-.modal h3{
-  font-size: 1.8rem;
-  font-family: 'Cardo', serif;
-  border-bottom: 1px solid white;
-  display: inline-block;
-  margin-bottom: 1.2rem;
-}
-
-.modal p{
-  font-family: 'Cardo', serif;
-  font: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-}
-
-.toggle-modal{
-  opacity: 1;
-  pointer-events: auto;
-}
 
 /*Footer Styling*/
 footer{
@@ -457,7 +467,49 @@ footer .copyright{
   color: #fff;
 }
 
+@media(max-width: 1000px){
+
+   .navbar{
+    display: none;
+  }
+
+  .hamburger{
+    opacity:  1;
+  }
+
+  .outer-container{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    padding: 0.5rem;
+  }
+
+  .description{
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+}
+
 @media(max-width: 767px){
+
+  .outer-container{
+    flex-direction: column;
+    margin-top: 0;
+    padding: 0.5rem;
+  }
+
+  .book-btn{
+    display: none;
+  }
+
+  .description{
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  .image-gallery{
+    padding: 1rem;
+  }
 
   .header{
     flex-direction: column;
@@ -467,11 +519,15 @@ footer .copyright{
 
   .header img{
     padding-top: 0.5rem;
-    margin: 0;
+    margin: 0.5rem;
   }
 
-  .navbar li a{
-    font-size: 1rem;
+  .navbar{
+    display: none;
+  }
+
+  .hamburger{
+    opacity:  1;
   }
 
   .hero-content{
@@ -492,7 +548,6 @@ footer .copyright{
 
   .flip-card{
     width: 90%;
-    transition: all 4s ease;
   }
 
   .previews{
@@ -542,9 +597,9 @@ footer .copyright{
     font-size: 1.5rem;
   }
 
-  .modal{
+  /* .modal{
     width: 90%;
-  }
+  } */
 
   .footer-content{
     flex-direction: column;

@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&family=Clicker+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="imageGallery.css">
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -30,10 +31,25 @@
       <ul>
         <li><a href="index.html" class="current">Home</a></li>
         <li><a href="treatments.html">Treatments</a></li>
+        <li><a href="products.html">Products</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <i class="hamburger fas fa-bars"></i>
   </header>
+
+  <div class="mobile-menu">
+    <div class="mobile-nav">
+      <i class="fas fa-times close"></i>
+      <ul class="open-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="treatments.html">Treatments</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
   <main>
     <div class="hero">
       <div class="hero-content">
@@ -41,15 +57,44 @@
         <a href="contact.html" class="white-btn btn">Book Now</a>
       </div>
     </div>
-    <section class="description">
-      <h1>Welcome to La Beaute Box</h1>
-      <p class="info">Emma is a talented beauty therapist with over 12 years experience within the industry. Emma has a special interest in nails and is passionate about the health of the natural nail. The salon is located in the village of Dullingham near Newmarket, Cambridgeshire. Emma ensures she continues to develop her knowledge and keeps up to date with the latest trends and training courses.<br> Recently Emma completed training with Bio Sculpture and Elim. She chose these products because of their proven ability to strengthen the nails and improve the condition of your hands and feet.
-      </p>
-    </section>
+    <div class="outer-container">
+      <section class="description">
+        <h1>Welcome to La Beaute Box</h1>
+        <p class="info">Emma is a talented beauty therapist with over 12 years experience within the industry. 
+          Emma has a special interest in nails and is passionate about the health of the natural nail. 
+          The salon is located in the village of Dullingham near Newmarket, Cambridgeshire. 
+          Emma ensures she continues to develop her knowledge and keeps up to date with the latest trends and training courses. 
+          Recently Emma completed training with Bio Sculpture and Elim. She chose these products because of their 
+          proven ability to strengthen the nails and improve the condition of your hands and feet.
+        </p>
+        <button class="grey-btn book-btn"><a href="https://www.instagram.com/labeautebox1" target="_BLANK">See more from La Beaute Box</a></button>
+      </section>
+
+      <section class="image-gallery">
+        <div class="active-image-container">
+          <img src="./images/thumbnail-1.png" alt="" class="active-image">
+        </div>
+
+        <div class="thumbnail-container">
+          <div class="thumbnail active">
+            <img src="./images/thumbnail-1.png" alt="" class="thumbnail-img">
+          </div>
+          <div class="thumbnail">
+            <img src="./images/gallery-nails-2.png" alt="" class="thumbnail-img">
+          </div>
+          <div class="thumbnail">
+            <img src="./images/gallery-nails.jpg" alt="" class="thumbnail-img">
+          </div>
+          <div class="thumbnail">
+            <img src="./images/home-manicure-slide.png" alt="" class="thumbnail-img">
+          </div>
+        </div>
+      </section>
+  </div>
 
 <section class="preview-section">
   <div class="flip-card">
-    <div class="front-card hands"></div>
+    <!-- <div class="front-card hands"></div> -->
     <div class="back-card hands">
       <h4>Hand Treatments</h4>
       <p>La Beaute box offers a range of nail treatments from a basic file & paint to a tailor-made manicure where your nails are assessed, treated & tidied finished with Gel polish or nail varnish. The combination of preparation, application and aftercare produces long lasting results.</p>
@@ -57,7 +102,7 @@
     </div>
   </div>
   <div class="flip-card">
-    <div class="front-card feet"></div>
+    <!-- <div class="front-card feet"></div> -->
     <div class="back-card feet">
       <h4>Foot Treatments</h4>
       <p>Elim is a medical grade pedicure treatment which uses state-of-the-art ingredients to remove hard skin and calluses from the feet. </p>
@@ -65,7 +110,7 @@
     </div>
   </div>
   <div class="flip-card">
-    <div class="front-card makeup"></div>
+    <!-- <div class="front-card makeup"></div> -->
     <div class="back-card makeup">
       <h4>Makeup</h4>
       <p>Makeup Lessons: <br>
@@ -93,7 +138,7 @@
       </div>
     </section>
 
-    <button class="safety">
+    <!-- <button class="safety">
       Click here for the latest Covid-19 Guidelines
     </button>
     <div class="modal-container">
@@ -106,7 +151,7 @@
           • I will be using disposable equipment & PPE where possible. I will be wearing a face mask for the duration of the appointment.</p>
         <button class="close-modal white-btn">Close</button>
       </div>
-    </div>
+    </div> -->
 
   </main>
   <footer>
@@ -134,6 +179,8 @@
   </footer>
 
 <script src = "script.js"></script>
+<script src = "mobile-menu.js"></script>
+<script src = "imageGallery.js"></script>
 
 </body>
 </html>

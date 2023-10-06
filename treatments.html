@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="title" content="Treatments">
-  <meta name="description" content="We offer a full range of treatments from Manicures, Pedicures, Gel, Elim Treatments, Mii makeup, Eyebrows and Facials">
+  <meta name="description" content="We offer a full range of treatments from Manicures, Pedicures, Gel, Elim Treatments, Mii makeup, Eyebrows.">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="treatments.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
@@ -31,10 +31,23 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="treatments.html" class="current">Treatments</a></li>
+        <li><a href="products.html">Products</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <i class="hamburger fas fa-bars"></i>
   </header>
+  <div class="mobile-menu">
+    <div class="mobile-nav">
+      <i class="fas fa-times close"></i>
+      <ul class="open-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="treatments.html">Treatments</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
   <main>
     <section class="price-list">
       <h2>Treatment Menu</h2>
@@ -50,7 +63,10 @@
           <p>Nails are shaped & finished off with a Gemini Nail Polish in the colour of your choice.</p>
           <h5>Nail Art</h5>
           <p>Prices based on design choice.</p>
-          <a href="contact.html" class="grey-btn btn">Book Now</a>
+          <div class="link-container">
+            <a href="products.html" class="products">See our Manicure products</a>
+            <a href="contact.html" class="grey-btn btn book">Book Now</a>
+          </div>
         </div>
         <img src="../images/prices-flower.png" alt="Pink Flower" class="flower features">
         <div class="price-card pedicures" id="pedicure">
@@ -65,7 +81,10 @@
           <p>Elim is a medical grade pedicure treatment which uses state-of-the-art ingredients to remove hard skin & calluses from the feet. This includes Heel Peel, AHA Exfoliant, UltraMud Mask & a Massage to the lower legs & feet.</p>
           <h5>Elim Heel Peel £15</h5>
           <p>ElimHeel Peel uses state-of-the-art ingredients to remove hard skin & calluses from the feet.</p>
-          <a href="contact.html" class="grey-btn btn">Book Now</a>
+          <div class="link-container">
+            <a href="products.html" class="products">See our Pedicure products</a>
+            <a href="contact.html" class="grey-btn btn book">Book Now</a>
+          </div>
           <img src="../images/price-green-plant.png" alt="" class="green-plant4 features">
         </div>
         <img src="../images/price-green-plant.png" alt="" class="green-plant features">
@@ -80,7 +99,10 @@
           <p>Discover time saving techniques to get your day off to a flying start.</p>
           <h5>Mii With Minerals £20</h5>
           <p>Minerals are the perfect choice for sensitive or problem skin, or if you're just looking for 100% natural makeup. We'll show you how to apply & work with mineral powders for a purely flawless radiance.</p>
-          <a href="contact.html" class="grey-btn btn">Book Now</a>
+          <div class="link-container">
+            <a href="products.html" class="products">See our Makeup Collection</a>
+            <a href="contact.html" class="grey-btn btn book">Book Now</a>
+          </div>
           <img src="../images/price-green-plant.png" alt="" class="green-plant3 features">
         </div>
         <img src="../images/price-green-plant.png" alt="" class="flower2 features">
@@ -119,5 +141,6 @@
     </div>
     <p class="copyright">Copyright &copy; 2022 - La Beaute Box | Website design by ASG Development</p>
   </footer>
+  <script src="mobile-menu.js"></script>
 </body>
 </html>

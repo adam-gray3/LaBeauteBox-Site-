@@ -32,10 +32,23 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="treatments.html">Treatments</a></li>
+        <li><a href="products.html">Products</a></li>
         <li><a href="contact.html" class="current">Contact</a></li>
       </ul>
     </nav>
+    <i class="hamburger fas fa-bars"></i>
   </header>
+  <div class="mobile-menu">
+  <div class="mobile-nav">
+    <i class="fas fa-times close"></i>
+    <ul class="open-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="treatments.html">Treatments</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</div>
   <main class="contact">
     <section class="form-container contact-box" id="form">
       <form class="form" name="contact" action="POST" data-netlify="true">
@@ -57,8 +70,6 @@
           <small></small>
         </div>
         <input type="submit" class="white-btn btn submit">
-
-        <!--  <button class="white-btn btn">Submit</button>-->
       </form>
     </section>
     <section class="contact-info contact-box">
@@ -97,5 +108,7 @@
     </div>
     <p class="copyright">Copyright &copy; 2022 - La Beaute Box | Website design by ASG Development</p>
   </footer>
+    <script src="mobile-menu.js"></script>
+    <script src="form.js"></script>
 </body>
 </html>

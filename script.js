@@ -61,57 +61,57 @@ function prevSlide(){
 setInterval(nxtSlide, 9000);
 
 //HOMEPAGE IMAGE FLIP
-let images = document.querySelectorAll(".flip-card");
-images.forEach(flipImage);
-function flipImage(image){
-  image.addEventListener("click", function(){
-    image.classList.toggle("flip");
-  })
-}
+// let images = document.querySelectorAll(".flip-card");
+// images.forEach(flipImage);
+// function flipImage(image){
+//   image.addEventListener("click", function(){
+//     image.classList.toggle("flip");
+//   })
+// }
 
 //MOBILE ROTATE
-const mediaQuery = window.matchMedia("(max-width: 767px)");
+// const mediaQuery = window.matchMedia("(max-width: 767px)");
 
-function screenChange(e){
-  if(e.matches){
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        entry.target.classList.toggle("rotate", entry.isIntersecting)
-        if(entry.isIntersecting) observer.unobserve(entry.target)
-      })
-    }, {
-      threshold: 0.7,
-    })
+// function screenChange(e){
+//   if(e.matches){
+//     const observer = new IntersectionObserver(entries => {
+//       entries.forEach(entry => {
+//         entry.target.classList.toggle("rotate", entry.isIntersecting)
+//         if(entry.isIntersecting) observer.unobserve(entry.target)
+//       })
+//     }, {
+//       threshold: 0.7,
+//     })
 
-    images.forEach(image => {
-      observer.observe(image)
-    })
-  }
-}
+//     images.forEach(image => {
+//       observer.observe(image)
+//     })
+//   }
+// }
 
-mediaQuery.addListener(screenChange);
-screenChange(mediaQuery)
+// mediaQuery.addListener(screenChange);
+// screenChange(mediaQuery)
 
 
 //Modal Function
 
-const modal = document.querySelector(".modal-container");
-const modalBtn = document.querySelector(".safety");
-const closeBtn = document.querySelector(".close-modal");
+// const modal = document.querySelector(".modal-container");
+// const modalBtn = document.querySelector(".safety");
+// const closeBtn = document.querySelector(".close-modal");
 
-modalBtn.addEventListener("click", showModal);
-closeBtn.addEventListener("click", closeModal);
+// modalBtn.addEventListener("click", showModal);
+// closeBtn.addEventListener("click", closeModal);
 
-function showModal(){
-  modal.classList.add("toggle-modal")
-};
+// function showModal(){
+//   modal.classList.add("toggle-modal")
+// };
 
-function closeModal(){
-  modal.classList.remove("toggle-modal")
-};
+// function closeModal(){
+//   modal.classList.remove("toggle-modal")
+// };
 
-window.addEventListener("click", function(e){
-  if(e.target == modal){
-    closeModal();
-  }
-})
+// window.addEventListener("click", function(e){
+//   if(e.target == modal){
+//     closeModal();
+//   }
+// })
