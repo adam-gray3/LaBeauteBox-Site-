@@ -1,0 +1,245 @@
+.weddings{
+    width: 85%;
+    margin: 0 auto;
+    font-family: 'Cardo', serif;
+}
+
+.wedding-title{
+    text-align: center;
+}
+
+.wedding-title p{
+    padding: 1rem;
+}
+
+
+/*HERO SECTION*/
+.wedding-card{
+    display: flex;
+    margin: 2rem;
+    color: var(--grey-text);
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.wedding-img{
+    width: 50%;
+    max-height: 450px;
+    object-fit: cover;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.wedding-img-center{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.hero-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-text h3{
+    display: inline-block;
+    width: fit-content;
+    margin: 0.8rem auto;
+    font-size: 2rem;
+    border-bottom: 2px solid var(--pink-text);
+}
+
+.hero-text p{
+    padding: 0 3rem;
+    font-size: 1.1rem;
+}
+
+.hero-text ul{
+    margin:  1.5rem auto;
+}
+
+.hero-text ul li{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    text-align: center;
+}
+
+.hero-text ul li:before {
+    content: "\2661";
+    margin-right: 0.5rem;
+}
+
+.package-title{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 0.75rem;
+    padding: 0 3rem;
+    text-decoration: underline;
+}
+
+.enquire{
+    align-self: center;
+    margin-bottom: 1rem;
+}
+
+.gallery-container{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    height: 550px;
+}
+
+.gallery-hero{
+    max-width: 450px;
+    width: 100%;
+    height: 100%;
+    margin-right: 2rem;
+}
+
+.thumbnails{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr min-content;
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+    padding-right: 0.5rem;
+}
+
+.thumbnails::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--grey-btn);
+  }
+
+
+.thumbnails img{
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.7s ease;
+}
+
+.thumbnails img.active{
+    opacity: 1;
+}
+
+.supplier-container{
+    text-align: center;
+}
+
+.supplier-container h4{
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    display: inline-block;
+    width: fit-content;
+    border-bottom: 2px solid var(--pink-text);
+    color: var(--grey-text);
+    font-family: 'Cardo', serif;
+}
+
+.suppliers{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 2rem;
+}
+
+.suppliers a img{
+    max-width: 400px;
+    border: 1px solid black;
+    height: 100%;
+}
+
+
+figure{
+    position: relative;
+    background-color: black;
+}
+
+figcaption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    opacity: 0;
+    font-size: 1.5rem;
+    transition: 0.6s all ease-in-out;
+}
+
+.suppliers a:hover{
+    opacity: 0.4;
+}
+
+.suppliers figure:hover figcaption{
+    opacity: 1;
+}
+
+@media(max-width: 1095px){
+    header{
+        flex-direction: column;
+    }
+    .gallery-container{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media(max-width: 768px){
+    .weddings{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .second{
+        order: 2;
+    }
+
+    .wedding-card{
+      flex-direction: column;
+      margin: 1rem;
+    }
+
+    .wedding-img{
+        height: 300px;
+    }
+
+    .hero-text, .wedding-hero img, .wedding-card img{
+        width: 100%;
+        align-items: center;
+    }
+
+    .hero-text h3{
+        margin: 1rem 0.5rem; 
+        font-size: 1.6rem;
+    }
+
+    .hero-text ul, .hero-text p{
+        padding: 0 1rem;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+    .gallery-hero{
+        margin: 0;
+        margin-bottom: 1rem;
+        max-height: 300px;
+    }
+
+    .gallery-container{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .thumbnails{
+       grid-template-columns: 1fr 1fr;
+    }
+}

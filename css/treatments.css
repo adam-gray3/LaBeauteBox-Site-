@@ -1,0 +1,203 @@
+/*PRICES STYLES*/
+.price-list{
+  text-align: center;
+  padding: 3rem;
+  overflow: hidden;
+}
+
+.price-list h2{
+  padding: 0 2rem 2rem;
+  font-size: 3rem;
+  font-family: 'Clicker Script', cursive;
+  color: var(--pink-text);
+}
+
+.icon{
+  width: 90px;
+  padding-bottom: 1rem;
+}
+
+.icon-feet{
+  width: 110px;
+}
+
+.icon-brow,
+.icon-makeup{
+  width: 60px;
+}
+
+.price-list h5{
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  font-family: 'Cardo', serif;
+  font-weight: bold;
+  color: rgb(124,115,115);
+}
+
+.price-list p{
+  padding-bottom: 1rem;
+  font-family: 'Cardo', serif;
+  color: var(--grey-text);
+}
+
+.price-cont{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  position: relative;
+}
+
+.price-card{
+  border: 8px solid silver;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.features{
+  position: absolute;
+}
+
+.flower{
+  width: 100px;
+  top: -30px;
+  left: 10px;;
+  transform: rotate(35deg);
+}
+
+.green-plant{
+  width: 100px;
+  top: -20px;
+  right: 0;
+  transform: scaleX(-1) rotate(20deg);
+}
+
+.green-plant2{
+  width: 90px;
+  bottom: -35px;
+  left: 0;
+  transform: scaleX(-1)rotate(20deg);
+}
+
+.flower2{
+  width: 100px;
+  bottom: -40px;
+  right: -10px;
+  transform: rotate(20deg);
+}
+
+.green-plant3{
+  width: 100px;
+  display: none;
+}
+
+.flower3{
+  width: 100px;
+  display: none;
+}
+
+.flower4{
+  width: 90px;
+  display: none;
+}
+
+.green-plant4{
+  width: 70px;
+  display: none;
+}
+
+
+/*MEDIA QURIES*/
+
+@media(max-width: 767px){
+    .price-cont{
+      grid-template-columns: 1fr;
+    }
+
+    .price-list h2{
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    .price-list p{
+      padding-bottom: 1.5rem;
+    }
+
+    .price-list{
+      padding: 1rem;
+    }
+
+    .icon-brow,
+    .icon-makeup{
+      width: 40px;
+    }
+
+    .flower{
+      width: 70px;
+    }
+
+    .green-plant{
+      top: 23%;
+      right: -10px;
+      width: 70px;
+      transform: rotate(20deg);
+    }
+
+    .flower2{
+      width: 70px;
+      transform:scaleX(-1) rotate(30deg);
+    }
+
+    .green-plant2{
+      width: 60px;
+      transform: rotate(35deg);
+      left: 10px;
+      bottom: 10%;
+    }
+
+    .green-plant3{
+      display: block;
+      width: 70px;
+      top: 55%;
+      right: 0;
+      transform: rotate(20deg)
+    }
+
+    .flower3{
+      display: block;
+      width: 70px;
+      transform: rotate(35deg);
+      top: 27%;
+      left: 0;
+    }
+
+    .flower4{
+      width: 70px;
+      display: block;
+      top: 59%;
+      left: 0;
+      transform: scaleX(-1) rotate(-35deg);
+    }
+
+    .green-plant4{
+      width: 70px;
+      display: block;
+      right: 0;
+      bottom: 13%;
+      transform: rotate(35deg);
+    }
+
+  .footer-content{
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+
+  .footer-content .socials{
+    flex-direction: row;
+  }
+
+  .footer-content .offers{
+    width: 80%;
+  }
+
+}

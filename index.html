@@ -7,7 +7,7 @@
   <meta name="title" content="Home Page">
   <meta name="description" content="Newmarket based beauty salon offering a wide range of treatments. Book online or call us on 07739699109">
   <meta name="keywords" content="beauty therapy, nail salon, eyelashes, Newmarket, Cambridge, Suffolk, beauty therapist Newmarket, waxing, massage">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet"  href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,12 +24,13 @@
 <body>
   <header class="header">
     <a href="index.html">
-      <img src="../images/logo.png" alt="La Beaute Box">
+      <img src="../images/logo-redo.jpg" alt="La Beaute Box">
     </a>
     <nav class="navbar">
       <ul>
         <li><a href="index.html" class="current">Home</a></li>
         <li><a href="treatments.html">Treatments</a></li>
+        <li><a href="weddings.html">Weddings</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -93,7 +94,7 @@
       </div>
     </section>
 
-    <button class="safety">
+    <!-- <button class="safety">
       Click here for the latest Covid-19 Guidelines
     </button>
     <div class="modal-container">
@@ -106,7 +107,7 @@
           • I will be using disposable equipment & PPE where possible. I will be wearing a face mask for the duration of the appointment.</p>
         <button class="close-modal white-btn">Close</button>
       </div>
-    </div>
+    </div> -->
 
   </main>
   <footer>
@@ -130,10 +131,11 @@
       </form>
       </div>
     </div>
-    <p class="copyright">Copyright &copy; 2022 - La Beaute Box | Website design by ASG Development</p>
+    <p class="copyright">Copyright &copy; <span class="date"></span> - La Beaute Box | Website design by ASG Development</p>
   </footer>
 
 <script src = "script.js"></script>
+<script src = "date.js"></script>
 
 </body>
 </html>
