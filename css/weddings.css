@@ -237,6 +237,7 @@ figcaption{
     .hero-text h3{
         margin: 1rem 0.5rem; 
         font-size: 1.6rem;
+        text-align: center;
     }
 
     .hero-text ul, .hero-text p{
@@ -267,7 +268,7 @@ figcaption{
     }
 
     .suppliers figure, .suppliers a img{
-        max-width: 250px;
+        max-width: 350px;
         background-color: #fff;
     }
 }
