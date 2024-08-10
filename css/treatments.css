@@ -80,7 +80,7 @@
 
 .flower2{
   width: 100px;
-  bottom: -40px;
+  bottom: 280px;
   right: -10px;
   transform: rotate(20deg);
 }
@@ -157,7 +157,7 @@
     .green-plant3{
       display: block;
       width: 70px;
-      top: 55%;
+      top: 42%;
       right: 0;
       transform: rotate(20deg)
     }
@@ -166,14 +166,14 @@
       display: block;
       width: 70px;
       transform: rotate(35deg);
-      top: 27%;
+      top: 39%;
       left: 0;
     }
 
     .flower4{
       width: 70px;
       display: block;
-      top: 59%;
+      top: 65%;
       left: 0;
       transform: scaleX(-1) rotate(-35deg);
     }
@@ -182,7 +182,7 @@
       width: 70px;
       display: block;
       right: 0;
-      bottom: 13%;
+      bottom: 29%;
       transform: rotate(35deg);
     }
 
