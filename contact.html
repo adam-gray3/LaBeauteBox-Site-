@@ -53,22 +53,26 @@
       <form class="form" name="contact" action="POST" data-netlify="true">
         <h2 class="form-heading">Contact Form</h2>
         <div class="input-fields">
-          <input type="text" name="name" placeholder="Enter Name" class="name">
+          <input type="text" name="name" placeholder="Enter Name" class="input name">
           <small></small>
         </div>
         <div class="input-fields">
-          <input name="email" placeholder="Enter Email" class="email">
+          <input name="email" placeholder="Enter Email" class="input email">
           <small></small>
         </div>
         <div class="input-fields">
-          <input type="text" name="number" placeholder="Enter Contact Number">
+          <input type="text" name="number" placeholder="Enter Contact Number" class="input">
           <small></small>
         </div>
         <div class="input-fields">
-          <input type="text" name="message" placeholder="Enter Message" class="message">
+          <input type="text" name="message" placeholder="Enter Message" class="input message">
           <small></small>
         </div>
-        <input type="submit" class="white-btn btn submit">
+        <div class="checkbox-container">
+          <input type="checkbox" class="checkbox">
+          <p class="terms">Click here to confirm you agree to our Terms & Conditions</p>
+        </div>
+        <input type="submit" class="input white-btn btn submit">
 
         <!--  <button class="white-btn btn">Submit</button>-->
       </form>
@@ -110,6 +114,7 @@
     <p class="copyright">Copyright &copy; <span class="date"></span> - La Beaute Box | Website design by ASG Development</p>
   </footer>
   <script src="date.js"></script>
+  <script src="form.js"></script>
   <script src="mobile-menu.js"></script>
 </body>
 </html>
