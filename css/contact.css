@@ -38,6 +38,10 @@
   align-items: center;
 }
 
+.bot-field{
+  display: none;
+}
+
 .checkbox-container{
   width: 60%;
   display: flex;
