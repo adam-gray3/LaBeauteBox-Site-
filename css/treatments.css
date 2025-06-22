@@ -166,14 +166,14 @@
       display: block;
       width: 70px;
       transform: rotate(35deg);
-      top: 39%;
+      top: 26%;
       left: 0;
     }
 
     .flower4{
       width: 70px;
       display: block;
-      top: 65%;
+      top: 45%;
       left: 0;
       transform: scaleX(-1) rotate(-35deg);
     }
