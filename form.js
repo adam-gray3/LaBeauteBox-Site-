@@ -3,6 +3,7 @@ const name = document.querySelector(".name");
 const email = document.querySelector(".email");
 const message = document.querySelector(".message");
 const checkbox = document.querySelector(".checkbox");
+const terms = document.querySelector(".term-link");
 
 function showError(input, message){
   const formControl = input.parentElement;
@@ -51,10 +52,10 @@ function checkMessage() {
 
 function checkTerms() {
   if (!checkbox.checked) {
-    checkbox.classList.add("error");
+    terms.classList.add("error");
     return false;
   }
-  checkbox.classList.remove("error");
+  terms.classList.remove("error");
   return true;
 }
 

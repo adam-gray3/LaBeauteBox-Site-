@@ -52,7 +52,7 @@
     <section class="form-container contact-box" id="form">
       <form class="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
         <h2 class="form-heading">Contact Form</h2>
-        <input name="bot-field" class="bot-field"/>
+        <input name="bot-field" type="text" class="bot-field"/>
         <div class="input-fields">
           <input type="text" name="name" placeholder="Enter Name" class="input name">
           <small></small>
@@ -71,12 +71,52 @@
         </div>
         <div class="checkbox-container">
           <input type="checkbox" class="checkbox">
-          <p class="terms">Click here to confirm you agree to our Terms & Conditions</p>
+          <p class="terms">Click here to confirm you agree to our <a href="#" class="term-link">Terms & Conditions</a></p>
         </div>
         <input type="submit" class="input white-btn btn submit">
 
         <!--  <button class="white-btn btn">Submit</button>-->
       </form>
+      <div class="modal-container">
+        <div class="modal">
+          <h3>Terms & Conditions</h3>
+          <p class="terms-headings">Cancellations</p>
+          <p>
+            Labeautebox runs on an appointment only basis. When a client cancels at the last minute or misses an appointment, 
+            this costs the salon financially. Understandably, reasons to cancel an appointment can occur. If this does happen, 
+            you are required to notify the salon as soon as possible to rearrange your appointment. 
+            If less than 48 hrs notice is given, you will be charged 50% of the total cost of the treatment.
+          </p>
+          <p class="terms-headings">Treatment Aftercare</p>
+          <p>
+            Please follow the aftercare given for each treatment to ensure you achieve the best results possible.
+          </p>
+          <p class="terms-headings">Personal Data</p>
+          <p>
+            At Labeautebox we collect your email address to be used for booking purposes and any appointment reminders. 
+            You will also receive salon news and offers however you can unsubscribe at any time. Labeautebox will not sell or forward your information. 
+            Any information stored is kept strictly confidential and in line with GDPR. By subscribing to the emails, 
+            you are agreeing to our terms and conditions, and have agreed for Labeautebox to store your information securely.
+          </p>
+          <p class="terms-headings">Client consultation forms</p>
+          <p>
+            All new clients will be requested to complete a client consultation form before each treatment. Failure to do so will result in the treatment not being performed. Please advise Labeautebox of any health conditions, allergies, or injuries that could affect your treatment when completing the form. 
+            It is your responsibility to let Labeautebox know of any changes before each treatment.
+          </p>
+          <p class="terms-headings">Patch Testing</p>
+          <p>
+            Patch testing is required at least 48 hrs before certain treatments. 
+            You will be notified when booking a treatment if a patch test is required. 
+            Failure to complete your patch test will result in your appointment being cancelled.
+          </p>
+          <p class="terms-headings">Age Restrictions</p>
+          <p>
+            You must be 18 years of age or over to receive any treatment. 
+            If not, parental consent will be required and a Parent/Guardian will 
+            also be required to attend and stay for the duration of your treatment.
+          </p>
+          <button class="close-modal white-btn">Close</button>
+        </div>
     </section>
     <section class="contact-info contact-box">
       <h2 class="form-heading">Contact Details</h2>
@@ -107,9 +147,14 @@
       <div class="offers">
         <h3>Sign Up For Latest Offers</h3>
         <form action="POST" data-netlify="true" name="offers" class="offers-form">
-        <input type="email" placeholder="Enter Email" name="offer">
-        <button type="submit" class="white-btn btn">Sign Up!</button>
-      </form>
+          <input type="email" placeholder="Enter Email" name="offer" class="offers-email">
+          <input type="text" placeholder="Enter Name" name="offer" class="offers-name">
+          <div class="terms-container">
+            <p class="terms-text"><a href="#" class="term-link">Terms & Conditions</a></p>
+            <input type="checkbox" class="offers-checkbox">
+          </div>
+          <input type="submit" class="white-btn btn">
+        </form>
       </div>
     </div>
     <p class="copyright">Copyright &copy; <span class="date"></span> - La Beaute Box | Website design by ASG Development</p>
@@ -117,5 +162,7 @@
   <script src="date.js"></script>
   <script src="form.js"></script>
   <script src="mobile-menu.js"></script>
+  <script src="modal.js"></script>
+  <script src="offers.js"></script>
 </body>
 </html>

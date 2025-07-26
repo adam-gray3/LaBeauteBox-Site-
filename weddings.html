@@ -157,15 +157,21 @@
       <div class="offers">
         <h3>Sign Up For Latest Offers</h3>
         <form action="POST" data-netlify="true" name="offers" class="offers-form">
-        <input type="email" placeholder="Enter Email" name="offer">
-        <button type="submit" class="white-btn btn">Sign Up!</button>
-      </form>
+          <input type="email" placeholder="Enter Email" name="offer" class="offers-email">
+          <input type="text" placeholder="Enter Name" name="offer" class="offers-name">
+          <div class="terms-container">
+            <p class="terms-text"><a href="#" class="term-link">Terms & Conditions</a></p>
+            <input type="checkbox" class="offers-checkbox">
+          </div>
+          <input type="submit" class="white-btn btn">
+        </form>
       </div>
     </div>
     <p class="copyright">Copyright &copy; <span class="date"></span> - La Beaute Box | Website design by ASG Development</p>
   </footer>
   <script src="slide.js"></script>
   <script src="mobile-menu.js"></script>
+  <script src="offers.js"></script>
   <script src="date.js"></script>
 </body>
 </html>

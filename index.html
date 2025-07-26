@@ -113,20 +113,47 @@
       </div>
     </section>
 
-    <!-- <button class="safety">
-      Click here for the latest Covid-19 Guidelines
-    </button>
     <div class="modal-container">
-      <div class="modal">
-        <h3>Covid-19 Guidelines</h3>
-        <p>• Please wear a face mask for the duration of your appointment. If you are exempt please make me aware of this when booking your appointment.<br><br>
-          • If you or anyone in your household has any covid symptoms or you have been in contact with anyone that has, please rearrange your appointment. <br><br>
-          • There is a hand washing & sanitising station for you to use on arrival & departure. <br><br>
-          • A thorough clean of the room & all equipment is carried out in-between each client. <br><br>
-          • I will be using disposable equipment & PPE where possible. I will be wearing a face mask for the duration of the appointment.</p>
-        <button class="close-modal white-btn">Close</button>
-      </div>
-    </div> -->
+     <div class="modal">
+          <h3>Terms & Conditions</h3>
+          <p class="terms-headings">Cancellations</p>
+          <p>
+            Labeautebox runs on an appointment only basis. When a client cancels at the last minute or misses an appointment, 
+            this costs the salon financially. Understandably, reasons to cancel an appointment can occur. If this does happen, 
+            you are required to notify the salon as soon as possible to rearrange your appointment. 
+            If less than 48 hrs notice is given, you will be charged 50% of the total cost of the treatment.
+          </p>
+          <p class="terms-headings">Treatment Aftercare</p>
+          <p>
+            Please follow the aftercare given for each treatment to ensure you achieve the best results possible.
+          </p>
+          <p class="terms-headings">Personal Data</p>
+          <p>
+            At Labeautebox we collect your email address to be used for booking purposes and any appointment reminders. 
+            You will also receive salon news and offers however you can unsubscribe at any time. Labeautebox will not sell or forward your information. 
+            Any information stored is kept strictly confidential and in line with GDPR. By subscribing to the emails, 
+            you are agreeing to our terms and conditions, and have agreed for Labeautebox to store your information securely.
+          </p>
+          <p class="terms-headings">Client consultation forms</p>
+          <p>
+            All new clients will be requested to complete a client consultation form before each treatment. Failure to do so will result in the treatment not being performed. Please advise Labeautebox of any health conditions, allergies, or injuries that could affect your treatment when completing the form. 
+            It is your responsibility to let Labeautebox know of any changes before each treatment.
+          </p>
+          <p class="terms-headings">Patch Testing</p>
+          <p>
+            Patch testing is required at least 48 hrs before certain treatments. 
+            You will be notified when booking a treatment if a patch test is required. 
+            Failure to complete your patch test will result in your appointment being cancelled.
+          </p>
+          <p class="terms-headings">Age Restrictions</p>
+          <p>
+            You must be 18 years of age or over to receive any treatment. 
+            If not, parental consent will be required and a Parent/Guardian will 
+            also be required to attend and stay for the duration of your treatment.
+          </p>
+          <button class="close-modal white-btn">Close</button>
+        </div>
+    </div>
 
   </main>
   <footer>
@@ -145,8 +172,13 @@
       <div class="offers">
         <h3>Sign Up For Latest Offers</h3>
         <form action="POST" data-netlify="true" name="offers" class="offers-form">
-        <input type="email" placeholder="Enter Email" name="offer">
-        <button type="submit" class="white-btn btn">Sign Up!</button>
+        <input type="email" placeholder="Enter Email" name="offer" class="offers-email">
+        <input type="text" placeholder="Enter Name" name="offer" class="offers-name">
+        <div class="terms-container">
+          <p class="terms-text"><a href="#" class="term-link">Terms & Conditions</a></p>
+          <input type="checkbox" class="offers-checkbox">
+        </div>
+        <input type="submit" class="white-btn btn">
       </form>
       </div>
     </div>
@@ -154,7 +186,9 @@
   </footer>
 
 <script src = "script.js"></script>
+<script src = "offers.js"></script>
 <script src = "date.js"></script>
 <script src="mobile-menu.js"></script>
+<script src="modal.js"></script>
 </body>
 </html>

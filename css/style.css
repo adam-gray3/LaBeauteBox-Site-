@@ -359,7 +359,7 @@ transform: rotateY(180deg);
 
 
 /*COVID MODAL*/
-/* .safety{
+.safety{
   margin: auto;
   margin-bottom: 2rem;
   padding: 0.5rem;
@@ -377,7 +377,40 @@ transform: rotateY(180deg);
 
 }
 
-.modal-container{
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+  transition: all ease 1s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem; 
+  overflow: auto;
+}
+
+.modal {
+  width: 100%;
+  max-width: 700px;
+  max-height: 90vh; 
+  overflow-y: auto;
+  color: var(--dark-text);
+  background: var(--pink-text);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* .modal-container{
   background-color: rgba(0,0,0,0.3);
   position: fixed;
   top: 0;
@@ -401,7 +434,7 @@ transform: rotateY(180deg);
   border-radius: 8px;
   padding: 1rem;
   text-align: center;
-}
+} */
 
 .modal h3{
   font-size: 1.8rem;
@@ -415,13 +448,19 @@ transform: rotateY(180deg);
   font-family: 'Cardo', serif;
   font: 1.2rem;
   font-weight: bold;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.terms-headings{
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .toggle-modal{
   opacity: 1;
   pointer-events: auto;
-} */
+} 
 
 /*Footer Styling*/
 footer{
@@ -468,6 +507,16 @@ footer{
 
 .footer-content .offers input:focus{
   outline: none;
+}
+
+.offers .terms-container{
+  display: flex;
+  justify-content: center;
+}
+
+.offers .terms-text{
+  font-size: 1rem;
+  margin-right: 0.5rem;
 }
 
 .footer-content h3{
