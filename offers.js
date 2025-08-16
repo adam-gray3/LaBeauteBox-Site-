@@ -31,7 +31,10 @@ function checkNewsletterSignUp(e){
   }
 
   if(isValid){
-    offerForm.submit()
+    offerForm.submit(); 
+    offerEmail.value = '';
+    offerName.value = '';
+    offersCheckbox = false; 
   }
 
 }
