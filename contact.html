@@ -50,7 +50,7 @@
   </div>
   <main class="contact">
     <section class="form-container contact-box" id="form">
-      <form class="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <form class="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
         <h2 class="form-heading">Contact Form</h2>
         <input name="bot-field" type="text" class="bot-field"/>
         <div class="input-fields">
@@ -73,6 +73,7 @@
           <input type="checkbox" class="checkbox">
           <p class="terms">Click here to confirm you agree to our <a href="#" class="term-link">Terms & Conditions</a></p>
         </div>
+        <div data-netlify-recaptcha="true"></div>
         <input type="submit" class="input white-btn btn submit">
 
         <!--  <button class="white-btn btn">Submit</button>-->
